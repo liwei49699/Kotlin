@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:id="@+id/linear_root"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:fitsSystemWindows="true"
+              android:onClick="hideInput"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_weight="1">
+
+        <FrameLayout
+            android:id="@+id/frame_plate"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp">
+
+            <ImageView
+                android:id="@+id/image_src"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <wind.android.f5.snapshot.widgets.EditableImageView
+                android:id="@+id/image_plate"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <wind.android.f5.snapshot.widgets.DraggableFrameLayout
+                android:id="@+id/frame_draggable"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+            </wind.android.f5.snapshot.widgets.DraggableFrameLayout>
+        </FrameLayout>
+
+        <ImageButton
+            android:id="@+id/image_withdraw"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignTop="@id/frame_plate"
+            android:layout_margin="10dp"
+            android:background="@drawable/btn_snap_edit_withdraw"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#282828"
+        android:orientation="horizontal">
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/text_cut"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="裁剪"
+                android:textColor="#faa"/>
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/text_draw"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="画笔"
+                android:textColor="#faa"/>
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/text_draw_text"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="文字"
+                android:textColor="#faa"/>
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" >
+
+            <TextView
+                android:id="@+id/text_mosaic"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="马赛克"
+                android:textColor="#faa"
+                />
+        </FrameLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,56 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:background="#E4E7E9"
+              android:orientation="horizontal"
+              android:paddingBottom="4dp"
+              android:paddingTop="4dp">
+
+    <RelativeLayout
+        android:id="@+id/relative_search"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="8dp"
+        android:layout_weight="1"
+        android:background="#fea">
+
+        <EditText
+            android:id="@+id/edit"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_toLeftOf="@+id/btn_clear"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:hint="请输入文字"
+            android:paddingLeft="6dp"
+            android:text="asdfasdf"
+            android:textColor="#fec"
+            android:textColorHint="#999999"
+            android:textSize="14dp"/>
+
+        <ImageView
+            android:id="@+id/btn_clear"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="6dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/l2pop_close"
+            android:visibility="visible"/>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/btn_save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:padding="6dp"
+        android:text="完成"
+        android:textColor="#fea"
+        android:textSize="14dp"/>
+
+</LinearLayout>
